@@ -2,7 +2,7 @@ import { fibonacciCalculator } from '../core/fibonacci';
 
 // 0 -> [0] --> DONE
 // 1 -> [0,1] --> DONE
-// 3 -> [0,1,1,2]
+// 3 -> [0,1,1,2] --> DONE
 // 5 -> [0,1,1,2,3]
 // 10 -> [0,1,1,2,3,5,8]
 
@@ -18,5 +18,9 @@ describe('Fibonacci', () => {
 
   it('given 3, returns [0, 1, 1, 2]', () => {
     expect(fibonacciCalculator(3)).toEqual([0, 1, 1, 2]);
+  });
+
+  it('given 5, returns [0,1,1,2,3]', () => {
+    expect(fibonacciCalculator(5)).toEqual([0,1,1,2,3]);
   });
 });
